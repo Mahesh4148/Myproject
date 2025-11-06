@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Location</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #89f7fe, #66a6ff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .map-container {
+            background-color: #ffffff;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            overflow: hidden;
+            padding: 10px;
+            width: 85%;
+            max-width: 900px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .map-container:hover {
+            transform: scale(1.02);
+            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+        }
+
+        .map-title {
+            text-align: center;
+            color: #333;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: 0;
+            border-radius: 12px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="map-container">
+        <div class="map-title">🛕 Santu Bai Temple – Explore the Beauty!</div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4956.885033501233!2d74.66242748309976!3d16.486460833435885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc0c374928e6aa3%3A0xf47e4d747a397691!2sSantu%20Bai%20Temple!5e0!3m2!1sen!2sin!4v1743107684236!5m2!1sen!2sin"
+        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <footer>📍 Located in Maharashtra, India – Visit and enjoy the serene surroundings!</footer>
+    </div>
+</body>
+</html>

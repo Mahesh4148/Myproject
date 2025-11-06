@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>History of Santubai Temple</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Georgia', serif;
+      background-image: url('https://images.unsplash.com/photo-1583484165111-0d32e6d27b79?auto=format&fit=crop&w=1500&q=80');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      overflow: hidden;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 0;
+    }
+
+    .history {
+      position: relative;
+      z-index: 1;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(8px);
+      border-radius: 20px;
+      padding: 40px;
+      width: 80%;
+      max-width: 900px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      text-align: justify;
+      line-height: 1.8;
+      font-size: 1.1rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .history h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      letter-spacing: 1px;
+      color: #ffd700;
+      text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .history h4 {
+      position: relative;
+      color: #000;
+      font-weight: 400;
+     background-image: url('histbg.png'); 
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 200px auto;
+      padding: 30px;
+      border-radius: 15px;
+      background-blend-mode: lighten;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @media (max-height: 700px) {
+      body {
+        align-items: flex-start;
+        overflow-y: auto;
+      }
+      .history {
+        margin-top: 50px;
+        margin-bottom: 50px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="overlay"></div>
+
+  <div class="history">
+    <h2>History of Santubai Temple</h2>
+    <h4>
+      Santubai Temple at Kadapur, in Chikodi taluk of Belagavi (Karnataka),
+      is a revered local shrine believed by villagers to be around 200 years old,
+      though this is mostly based on oral tradition. The temple is dedicated to the goddess Santubai,
+      who is considered a protector and benefactor of children.
+      Families from Kadapur and neighbouring villages often bring infants
+      and young children here for blessings, reflecting the temple’s deep cultural 
+      and spiritual significance in community life. The shrine is beautifully situated beside a lake, 
+      which adds to its serene atmosphere and makes it a focal point for local gatherings and festivals. 
+      While detailed historical records are scarce, the temple’s location, traditional rituals,
+      and continuous devotion highlight its importance as a living heritage site in northern Karnataka.
+    </h4>
+  </div>
+</body>
+</html>

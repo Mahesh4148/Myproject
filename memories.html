@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memories Gallery</title>
+  <style>
+    /* Page background and layout */
+    body {
+      background: linear-gradient(135deg, #1e1e1e, #383838);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 30px;
+      color: #fff;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffd700;
+      font-size: 2.2rem;
+      letter-spacing: 1px;
+      margin-bottom: 25px;
+      text-shadow: 0 0 12px rgba(255, 215, 0, 0.6);
+    }
+
+    /* Main gallery grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 25px;
+      width: 100%;
+      max-width: 1300px;
+      background: rgba(255, 255, 255, 0.05);
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Each photo/video container */
+    .media-box {
+      background: #111;
+      border: 3px solid #ffd700;
+      border-radius: 15px;
+      overflow: hidden;
+      padding: 10px;
+      box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+      transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+    }
+
+    .media-box:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(255, 215, 0, 0.5);
+      border-color: #fff;
+    }
+
+    /* Media elements */
+    .media-box img,
+    .media-box video {
+      display: block;
+      width: 100%;
+      height: 100%;
+      max-height: 400px;
+      border-radius: 10px;
+      object-fit: contain; /* ensures full image fits */
+      background-color: #000;
+      transition: opacity 0.3s ease;
+    }
+
+    .media-box img:hover,
+    .media-box video:hover {
+      opacity: 0.9;
+    }
+
+    /* Animation for fade-in */
+    .media-box {
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      margin-top: 30px;
+      color: #ccc;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    /* Responsive tweaks */
+    @media (max-width: 768px) {
+      .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+      .media-box img,
+      .media-box video {
+        max-height: 350px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <h1>🌸 Memories Gallery 🌸</h1>
+
+  <div class="gallery">
+    <!-- Images -->
+    <div class="media-box"><img src="Memories/M1.jpg" alt="Memory 1" /></div>
+    <div class="media-box"><img src="Memories/M2.jpg" alt="Memory 2" /></div>
+    <div class="media-box"><img src="Memories/M3.jpg" alt="Memory 3" /></div>
+    <div class="media-box"><img src="Memories/M4.jpg" alt="Memory 4" /></div>
+    <div class="media-box"><img src="Memories/M5.jpg" alt="Memory 5" /></div>
+    <div class="media-box"><img src="Memories/M6.jpg" alt="Memory 6" /></div>
+    <div class="media-box"><img src="Memories/M7.jpg" alt="Memory 7" /></div>
+    <div class="media-box"><img src="Memories/M8.jpg" alt="Memory 8" /></div>
+    <div class="media-box"><img src="Memories/M9.jpg" alt="Memory 9" /></div>
+    <div class="media-box"><img src="Memories/M10.jpg" alt="Memory 10" /></div>
+    <div class="media-box"><img src="Memories/M12.jpg" alt="Memory 12" /></div>
+    <div class="media-box"><img src="Memories/M13.jpg" alt="Memory 13" /></div>
+    <div class="media-box"><img src="Memories/M15.jpg" alt="Memory 15" /></div>
+
+    <!-- Videos -->
+    <div class="media-box"><video src="Memories/V1.mp4" controls></video></div>
+    <div class="media-box"><video src="Memories/V2.mp4" controls></video></div>
+    <div class="media-box"><video src="Memories/V3.mp4" controls></video></div>
+    <div class="media-box"><video src="Memories/V4.mp4" controls></video></div>
+    <div class="media-box"><video src="Memories/V5.mp4" controls></video></div>
+    <div class="media-box"><video src="Memories/V6.mp4" controls></video></div>
+  </div>
+
+  <footer>💫 A journey of memories beautifully captured 💫</footer>
+</body>
+</html>
